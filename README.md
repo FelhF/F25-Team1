@@ -35,5 +35,5 @@ This website was created for users interested in a specific topic or item to be 
     moderate services: delete unreliable or untrustworthy deal listings.
     moderate review: delete reviews.
     view usage statistics: Review views and redirections of deal listings.
-=======
+
 
