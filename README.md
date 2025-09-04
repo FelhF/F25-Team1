@@ -5,7 +5,7 @@
 
 ## Team members
 
-Team member #1 Franklin Lagos
+Team member #1 Franklin Lagos  #2 Papa Dieng
 
 
 ## Desription
@@ -18,7 +18,11 @@ Many online stores and local stores do not advertise current deals that are bein
 This website was created for users interested in a specific topic or item to be notified of deals in a single website, without having to visit each website individually. Some online stores also keep track of what users are interested in and may modify the prices of said items based on their history. This website reduces the information tracked by those online stores to reduce price manipulation.
 
 ## App Functions
-
+1.Customer
+    Using details like name, emails, location, and interests customers can create a profile. Through an account setting page they will be able to update or edit. The profiles will also store subscription and review history
+    Customers can browse bulletin boards made by providers. each board will list online deals with more specific tailored details to each store such as links. Search and filter system will help narrow results
+    Customers will be able to subscribe to bulletin boards that match their specific likes and interests. Subscriptions will lead to notificationns. Unfollowing or following go through user profile.
+    Leaving reviews and ratings will also be invluded. The criteria for the reviews would be based on things like authenticity of a deal, and likeability.
 
 2.Provider (bulletin board creator):
     Create/modify/remove provider profile: Register as a bulletin board creator/creators.
