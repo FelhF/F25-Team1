@@ -2,9 +2,9 @@
 ## For <project name>
 
 Version 0.1  
-Prepared by <author>  
-<organization>  
-<date created> 
+Prepared by Franklin Lagos & Papa Dieng  
+CSC 340
+September 17, 2025
 
 Table of Contents
 =================
@@ -37,7 +37,7 @@ Table of Contents
 ## Revision History
 | Name | Date    | Reason For Changes  | Version   |
 | ---- | ------- | ------------------- | --------- |
-|      |         |                     |           |
+| Franklin L.    | Sept 17        |   Initial changes                  |   1.0        |
 |      |         |                     |           |
 |      |         |                     |           |
 
@@ -45,82 +45,90 @@ Table of Contents
 
 ### 1.1 Document Purpose
 Describe the purpose of the SRS and its intended audience.
+**change**
 
 ### 1.2 Product Scope
 Identify the product whose software requirements are specified in this document, including the revision or release number. Explain what the product that is covered by this SRS will do, particularly if this SRS describes only part of the system or a single subsystem. 
 Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals. Relate the software to corporate goals or business strategies. If a separate vision and scope document is available, refer to it rather than duplicating its contents here.
 
+**change**
+
 ### 1.3 Definitions, Acronyms and Abbreviations                                                                                                                                                                          |
 
 ### 1.4 References
-List any other documents or Web addresses to which this SRS refers. These may include user interface style guides, contracts, standards, system requirements specifications, use case documents, or a vision and scope document. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
+List any other documents or Web addresses to which this SRS refers. These may include user interface style guides, contracts, standards, system requirements specifications, use case documents, or a vision and scope document. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location. **change**
 
 ### 1.5 Document Overview
-Describe what the rest of the document contains and how it is organized.
+Describe what the rest of the document contains and how it is organized. **change**
 
 ## 2. Product Overview
-This section should describe the general factors that affect the product and its requirements. This section does not state specific requirements. Instead, it provides a background for those requirements, which are defined in detail in Section 3, and makes them easier to understand.
+Deal Finder is a website created for the purpose of compiling 
+deals, sales, and discounts from a multitude of retail, online, 
+and local sellers in a single place. It is a community-driven effort in which the users themselves create bulletin boards
+where they can post deals about their chosen topic. 
 
 ### 2.1 Product Functions
-Summarize the major functions the product must perform or must let the user perform. Details will be provided in Section 3, so only a high level summary (such as a bullet list) is needed here. Organize the functions to make them understandable to any reader of the SRS. A picture of the major groups of related requirements and how they relate, such as a top level data flow diagram or object class diagram, is often effective.
+Customers can log in and either check a variety of trending deals or they can search for deals of certain categories or within a chosen
+radius from their chosen location. Customers can also become bulletin board creators and be the ones that gather deals to share with others.
+
 
 ### 2.2 Product Constraints
-This subsection should provide a general description of any other items that will limit the developer’s options. These may include:  
 
-* Interfaces to users, other applications or hardware.  
-* Quality of service constraints.  
-* Standards compliance.  
-* Constraints around design or implementation.
+The user interface is meant mainly for computer webpage viewing. If opened on other devices, the user interface may not look as intended. Since it is a community-driven website, the quality may fluctuate depending on the users and bulletin board creators.
   
 ### 2.3 User Characteristics
-Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the pertinent characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the most important user classes for this product from those who are less important to satisfy.
+The user interface will be streamlined so users with minimal knowledge on computers should stll be able to use Deal Finder.
 
 ### 2.4 Assumptions and Dependencies
-List any assumed factors (as opposed to known facts) that could affect the requirements stated in the SRS. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project, unless they are already documented elsewhere (for example, in the vision and scope document or the project plan).
+Deal Finder uses HTML and CSS for the user interface and their front end features. The backend will operate using a database on PostgresSQL (subject to change) and will use external API's for location and/or finding additional deals.
 
 ## 3. Requirements
 
 ### 3.1 Functional Requirements 
-This section specifies the software product's requirements. Specify all of the software requirements to a level of detail sufficient to enable designers to design a software system to satisfy those requirements, and to enable testers to test that the software system satisfies those requirements.
 
-The specific requirements should:
-* Be uniquely identifiable.
-* State the subject of the requirement (e.g., system, software, etc.) and what shall be done.
-* Optionally state the conditions and constraints, if any.
-* Describe every input (stimulus) into the software system, every output (response) from the software system, and all functions performed by the software system in response to an input or in support of an output.
-* Be verifiable (e.g., the requirement realization can be proven to the customer's satisfaction)
-* Conform to agreed upon syntax, keywords, and terms.
+
+* While an account is not necessary to view deals, It is necessary to create bulletin board, set deal preferences and bookmarks, give reviews, and a few other features. An account id is given to each created account.
+* The browser may need to be up to date to guarantee optimal user experience.
+
+**change** **add user function requirements**
+* Bulletin board information can be changed. i.e. name, description, picture.
+* Bulletin boards can be changed by the bulletin board creator to add, update, remove, or set a deadline for each of their shared deals.
+* Bulletin board creators can read, respond, and mark reviews for moderation. 
+* Bulletin board creators can read recommended deals from users to consider adding to their bulletin board.
+* Bulletin board creators can see statistics about interactions and liked deals from the users.
 
 #### 3.1.1 User interfaces
-Define the software components for which a user interface is needed. Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Details of the user interface design should be documented in a separate user interface specification.
-
-Could be further divided into Usability and Convenience requirements.
+Web pages will use HTML, CSS, and JavaScript.
 
 #### 3.1.2 Hardware interfaces
-Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
+Devices with web browser capabilities. For optimal ser experience, a laptop or a desktop pc are recommended.
 
 #### 3.1.3 Software interfaces
-Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Refer to documents that describe detailed application programming interface protocols. Identify data that will be shared across software components. If the data sharing mechanism must be implemented in a specific way (for example, use of a global data area in a multitasking operating system), specify this as an implementation constraint.
+Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Refer to documents that describe detailed application programming interface protocols. Identify data that will be shared across software components. If the data sharing mechanism must be implemented in a specific way (for example, use of a global data area in a multitasking operating system), specify this as an implementation constraint. **change**
 
 ### 3.2 Non Functional Requirements 
 
 #### 3.2.1 Performance
-If there are performance requirements for the product under various circumstances, state them here and explain their rationale, to help the developers understand the intent and make suitable design choices. Specify the timing relationships for real time systems. Make such requirements as specific as possible. You may need to state performance requirements for individual functional requirements or features.
+
+Deal Finder will consume low amount of memory.
 
 #### 3.2.2 Security
-Specify any requirements regarding security or privacy issues surrounding use of the product or protection of the data used or created by the product. Define any user identity authentication requirements. Refer to any external policies or regulations containing security issues that affect the product. Define any security or privacy certifications that must be satisfied.
+Users can only change information about their account or bulletin boards either created or given access or given creator access by other. A user who is not a creator of a bulletin board can not change anyhing about the board, besides giving reviews or bookmarking to their list of preferred bulletin boards.
 
 #### 3.2.3 Reliability
-Specify the factors required to establish the required reliability of the software system at time of delivery.
+
+While older web browsers may work, for best performance and reliability, use an up-to-date browser.
 
 #### 3.2.4 Availability
-Specify the factors required to guarantee a defined availability level for the entire system such as checkpoint, recovery, and restart.
+Deal Finder should be available to a pre-release state around
+October 2025, final working version should be up around December 2025.
 
 #### 3.2.5 Compliance
-Specify the requirements derived from existing standards or regulations
+
+**change**
 
 #### 3.2.6 Cost
-Specify monetary cost of the software product.
+Specify monetary cost of the software product. **change**
 
 #### 3.2.7 Deadline
-Specify schedule for delivery of the software product.
+Specify schedule for delivery of the software product. **change**
