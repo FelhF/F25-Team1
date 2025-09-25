@@ -1,0 +1,52 @@
+#Username {
+position: absolute;
+top: 40%;
+left: 40%;
+}
+
+#Email {
+position: absolute;
+top: 48%;
+left: 40%;
+}
+
+#Phone {
+position: absolute;
+top: 50%;
+left: 40%;
+}
+
+#profilepic{
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    width: 200px;
+}
+
+#savechanges{
+    position: absolute;
+    top: 54%;
+    left: 45%;
+    font-size: 20px;
+}
+
+#return{
+    position: absolute;
+    top: 60%;
+    left: 48%;
+    font-size: 15pt;
+    height: 80px;
+    width: 100px;
+    border: black solid 3px;
+}
+
+#currentUsername{
+    left: 40%;
+    position: absolute;
+    top: 36%;
+}
+
+#currentEmail{
+position: absolute;
+left: 40%;
+top: 45%;}
