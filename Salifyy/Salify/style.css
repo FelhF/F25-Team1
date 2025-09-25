@@ -251,3 +251,18 @@ input[type="text"], input[type="password"], input[type="email"] {
   resize: vertical;
   margin-bottom: 10px;
 }
+
+#Register{
+  background-color: green;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+#RegisterUsername{
+  margin-top: 10px;
+}
+
+#Register:hover {
+  background-color: var(--primary-color);
+}
