@@ -1,0 +1,27 @@
+#Username {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    font-size: 20px;
+}
+
+#Email{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width: 40%;
+    font-size: 20px;
+}
+
+#send {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 20%;
+    height: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
