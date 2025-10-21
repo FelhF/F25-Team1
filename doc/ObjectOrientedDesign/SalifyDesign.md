@@ -1,9 +1,9 @@
-# LocalHarvest Hub - Software Design 
+# Salify - Software Design 
 
 Version 1  
-Prepared by Alice Beback\
-LocalHarvest Hub\
-Oct 8, 2025
+Prepared by Franklin Lagos\Papa Dieng
+Salify\
+Oct 21, 2025
 
 Table of Contents
 =================
