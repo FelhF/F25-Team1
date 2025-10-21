@@ -76,6 +76,7 @@ edit reviews
 Bookmark
 user can bookmark deals or boards into their favorite list for the future 
 update board
+yyyyy
 
 
 #### 2.2.3 Actor: Admin
