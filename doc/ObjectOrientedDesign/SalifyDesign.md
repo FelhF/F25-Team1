@@ -66,10 +66,25 @@ Creators can update the boards they created or moderate to add the latest deals,
 Creators can see recommendations provided by users to consider if those deals should be added to their boards or not.
 
 
-#### 2.2.2 Actor: Customer
+#### 2.2.2 Actor: Customeruser-case customer 2.2.2.1
+Sign in
+user
+User can sign in to veiw and set deal preferences
+see and share deals
+block board/user
+edit reviews
+Bookmark
+user can bookmark deals or boards into their favorite list for the future 
+update board
 
 
 #### 2.2.3 Actor: Admin
+Moderate reviews 
+update deals
+Ban users
+Reviews
+account info edits
+set deal deadline
 
 
 
@@ -77,11 +92,3 @@ Creators can see recommendations provided by users to consider if those deals sh
 ![UML Class Diagram](design.png)
 ## 4. Database Schema
 ![UML Class Diagram](Schema.png)
-user-case customer 2.2.2.1
-Sign in
-user
-User can sign in to viw deals
-2.2.2.2 Bookmark
-user can bookmark deals or boards into their favorite list for the future 
-Yes
-Yes
