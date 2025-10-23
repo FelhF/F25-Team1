@@ -67,7 +67,7 @@ Creators can see recommendations provided by users to consider if those deals sh
 
 
 #### 2.2.2 Actor: Customer
-Review, sign in, block users/boards, edit account information, bookmark, edit reviews, share deals, have deal preferences.
+Review, sign in, block users/boards, edit account information, bookmark, edit reviews, share deals, have deal preferences..
 
 #### 2.2.3 Actor: Admin
 Bookmark, ban user, share deals, moderate reviews, sign in.
