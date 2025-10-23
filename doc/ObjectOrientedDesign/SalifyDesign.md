@@ -77,7 +77,8 @@ Bookmark
 user can bookmark deals or boards into their favorite list for the future 
 update board
 yyyyy
-y
+(Updated by Papa on 10/21 for Milestone 4)
+yes
 
 
 #### 2.2.3 Actor: Admin
