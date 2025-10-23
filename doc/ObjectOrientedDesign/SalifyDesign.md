@@ -66,11 +66,30 @@ Creators can update the boards they created or moderate to add the latest deals,
 Creators can see recommendations provided by users to consider if those deals should be added to their boards or not.
 
 
-#### 2.2.2 Actor: Customer
-Review, sign in, block users/boards, edit account information, bookmark, edit reviews, share deals, have deal preferences.
+#### 2.2.2 Actor: Customeruser-case customer 2.2.2.1
+Sign in
+user
+User can sign in to veiw and set deal preferences
+see and share deals
+block board/user
+edit reviews
+Bookmark
+user can bookmark deals or boards into their favorite list for the future 
+update board
+yyyyy
+(Updated by Papa on 10/21 for Milestone 4)
+yes
+
 
 #### 2.2.3 Actor: Admin
-Bookmark, ban user, share deals, moderate reviews, sign in.
+Moderate reviews 
+update deals
+Ban users
+Reviews
+account info edits
+set deal deadline
+
+
 
 ## 3. UML Class Diagram
 ![UML Class Diagram](design.png)
