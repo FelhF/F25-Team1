@@ -2,9 +2,17 @@ package com.example.Salify.Deal;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
+import com.example.Salify.Board.Board;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties({"boards"})
 @Entity
 @Table(name = "deals")
+
+
 public class Deal {
 
     @Id
@@ -29,10 +37,15 @@ public class Deal {
     @Column(length = 1000)
     private String description;
 
+     
+    @ManyToMany(mappedBy = "deals")                                             // Many-to-Many with boards
+    @JsonIgnoreProperties("deals")  
+    private Set<Board> boards = new HashSet<>();
+
     public Deal() {}
 
     public Deal(Long dealId, LocalDate startDate, LocalDate endDate, String store,
-                String address, String storeLink, String category, String description) {
+            String address, String storeLink, String category, String description) {
         this.dealId = dealId;
         this.startDate = startDate;
         this.endDate = endDate;
@@ -54,6 +67,7 @@ public class Deal {
         this.description = description;
     }
 
+    // Getters and Setters
 
     public Long getDealId() {
         return dealId;
@@ -117,5 +131,13 @@ public class Deal {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Set<Board> getBoards() {
+        return boards;
+    }
+
+    public void setBoards(Set<Board> boards) {
+        this.boards = boards;
     }
 }

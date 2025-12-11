@@ -1,11 +1,18 @@
 package com.example.Salify.Board;
 
+import java.util.Set;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import com.example.Salify.Deal.Deal;
+
 @RestController
+@CrossOrigin(origins = "*")
 public class BoardController {
 
+
+    
     @Autowired
     private BoardService boardService;
 
@@ -59,6 +66,23 @@ public class BoardController {
         return boardService.getBoardByName(name);
     }
 
+    @PostMapping("/boards/{boardId}/deals/{dealId}")
+    public Board addDealToBoard(@PathVariable Long boardId, @PathVariable Long dealId) {
+        return boardService.addDealToBoard(boardId, dealId);
+    }
+
+    @DeleteMapping("/boards/{boardId}/deals/{dealId}")
+    public Board removeDealFromBoard(@PathVariable Long boardId, @PathVariable Long dealId) {
+        return boardService.removeDealFromBoard(boardId, dealId);
+    }
+    @GetMapping("/boards/{id}/deals")
+public Set<Deal> getDealsForBoard(@PathVariable Long id) {
+        Board board = boardService.getBoardById(id);
+        if (board == null) {
+            throw new RuntimeException("Board not found");
+        }
+        return board.getDeals(); 
+    }
     // Write board data to JSON file
     @PostMapping("/boards/writeFile")
     public Object writeJson(@RequestBody Board board) {
