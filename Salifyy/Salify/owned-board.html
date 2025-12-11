@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Board: Best Tech Deals - Salify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Salify</h1>
+        <nav>
+            <a href="user-dashboard.html">My Dashboard</a>
+            <a href="community-boards.html">Community Boards</a>
+            <a href="owned-board.html">My boards</a>
+            <a href="account.html">Account</a>
+            <a href="index.html">Log Out</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>My Board: Best Tech Deals</h2>
+        <p>Manage the deals, description, and status of your curated board.</p>
+
+        <section style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding: 15px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+            <div>
+                <p><strong>Status:</strong> Active</p>
+                <p style="margin-top: 5px;"><strong>Description:</strong> Curated list of the best prices on tech and gadgets.</p>
+            </div>
+            <div>
+                <button class="btn-secondary" style="width: auto; margin-right: 10px;">Edit Board Details</button>
+                <button class="btn" style="width: auto; background-color: #e74c3c;">Deactivate Board</button>
+            </div>
+        </section>
+        
+        <section class="search-container">
+            <input type="text" placeholder="Search deals on this board...">
+            <i class="fas fa-search search-icon"></i>
+        </section>
+
+        <h3>Deals on This Board</h3>
+        <div class="dashboard-grid">
+            
+            <div class="deal-card">
+                <img src="https://placehold.co/250x150/5E81AC/fff/png?text=Monitor" alt="Tech Deal">
+                <h3>4K Monitor Flash Sale</h3>
+                <p>Great price on a high-refresh monitor for gamers.</p>
+                <div class="deal-meta">
+                    <p>Source: <a href="https://www.bestbuy.com" target="_blank">Best Buy</a></p>
+                    <button class="btn-secondary" style="margin-top: 10px; background-color: #3498db; color: white;">Edit Deal</button>
+                    <button class="btn-secondary" style="width: auto; margin-top: 10px; background-color: #e74c3c; color: white;">Remove</button>
+                </div>
+            </div>
+
+            <div class="deal-card">
+                <img src="https://placehold.co/250x150/81A1C1/fff/png?text=Laptop" alt="Tech Deal">
+                <h3>Student Laptop Discount</h3>
+                <p>High-spec laptop at an unbeatable student rate.</p>
+                <div class="deal-meta">
+                    <p>Source: <a href="https://www.dell.com" target="_blank">Dell</a></p>
+                    <button class="btn-secondary" style="margin-top: 10px; background-color: #3498db; color: white;">Edit Deal</button>
+                    <button class="btn-secondary" style="width: auto; margin-top: 10px; background-color: #e74c3c; color: white;">Remove</button>
+                </div>
+            </div>
+
+            <div class="deal-card" style="display: flex; align-items: center; justify-content: center; text-align: center; border: 2px dashed #ccc; cursor: pointer;">
+                <div style="padding: 30px;">
+                    <i class="fas fa-plus-circle" style="font-size: 2.5em; color: #3498db;"></i>
+                    <h3 style="margin-top: 10px;">Add New Deal</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

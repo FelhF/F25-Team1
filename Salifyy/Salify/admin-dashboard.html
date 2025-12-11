@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Salify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Salify Admin</h1>
+        <nav>
+            <a href="account.html">Return to account</a>
+            <a href="index.html">Log Out</a>
+        </nav>
+    </header>
+
+    <div class="container admin-grid">
+        <aside class="sidebar">
+            <h3>Admin Tools</h3>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Manage Users</a></li>
+                <li><a href="#">Manage Deals</a></li>
+                <li><a href="#">Site Settings</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h2>Dashboard Overview</h2>
+            <p>Welcome, Admin! Here's a quick look at key site metrics and recent activity.</p>
+            
+            <div class="dashboard-grid">
+                <div class="deal-card">
+                    <h3>Total Users</h3>
+                    <p style="font-size: 2em; text-align: center;">5,421</p>
+                </div>
+                <div class="deal-card">
+                    <h3>Active Deals</h3>
+                    <p style="font-size: 2em; text-align: center;">1,298</p>
+                </div>
+                <div class="deal-card">
+                    <h3>New Sign-ups (Today)</h3>
+                    <p style="font-size: 2em; text-align: center;">47</p>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 20px;">Recent Activity</h3>
+            <ul>
+                <li>John Doe created a new community board.</li>
+                <li>New deal posted: "20% off at Target".</li>
+                <li>User Jane Smith updated her profile.</li>
+            </ul>
+        </main>
+    </div>
+</body>
+</html>
