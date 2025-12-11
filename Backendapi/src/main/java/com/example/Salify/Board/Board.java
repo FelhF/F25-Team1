@@ -1,10 +1,18 @@
 package com.example.Salify.Board;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import com.example.Salify.Deal.Deal;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -23,13 +31,33 @@ public class Board {
 
     private String description;
 
+
+    @ManyToMany
+    @JoinTable(
+        name = "board_deals",
+        joinColumns = @JoinColumn(name = "board_id"),
+        inverseJoinColumns = @JoinColumn(name = "deal_id")
+    )
+    private Set<Deal> deals = new HashSet<>();
+
+    private String category;
+    private String Url;
+
+    public Set<Deal> getDeals() {
+    return deals;
+}
+
+public void setDeals(Set<Deal> deals) {
+    this.deals = deals;
+}
     public Board() {}
 
-    public Board(Long boardId, String name, Double rating, String description) {
+    public Board(Long boardId, String name, Double rating, String description, String category) {
         this.boardId = boardId;
         this.name = name;
         this.rating = rating;
         this.description = description;
+        this.category = category;
     }
 
     public Board(String name, Double rating, String description) {
@@ -68,5 +96,21 @@ public class Board {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+     public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+      public String getURL() {
+        return Url;
+    }
+
+    public void setURL(String URL) {
+        this.Url = URL;
     }
 }

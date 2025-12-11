@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Salify – Settings</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="settings">
+  <header class="top-bar">
+        <div class="logo">Salify</div>
+        
+        <nav class="nav-links">
+            <a href="deals.html">Deals</a>
+            <a href="favorites.html">favorites</a>
+            <a href="community-boards.html">Community Boards</a>
+            <a href="owned-board-list.html">My boards</a>
+            <a href="settings.html">Account</a>
+            <a href="login.html">Log Out</a>
+        </nav>
+        
+    </header>
+    
+    <div class="auth-links">
+      <span id="currentUser"></span>
+      <a href="login.html" id="loginLink">Login</a>
+      <button id="logoutBtn" class="btn secondary hidden">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Account Settings</h1>
+    <section class="card form-card">
+      <form id="settingsForm">
+        <label>Name
+          <input type="text" name="name" required />
+        </label>
+        <label>Email
+          <input type="email" name="email" required />
+        </label>
+        <label>Address
+          <input type="text" name="address" />
+        </label>
+        <label>Profile picture URL
+          <input type="url" name="avatar_url" />
+        </label>
+        <button type="submit" class="btn primary">Save changes</button>
+        <p id="settingsMsg" class="info-text"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Board – Best Tech Deals | Salify</title>
+
+    <script src="scripts/deals-script.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body data-page="owned-board">
+
+</body>
+    <header class="top-bar">
+        <div class="logo">Salify</div>
+        
+        <nav class="nav-links">
+            <a href="deals.html">Deals</a>
+            <a href="favorites.html">favorites</a>
+            <a href="community-boards.html">Community Boards</a>
+            <a href="owned-board-list.html">My boards</a>
+            <a href="settings.html">Account</a>
+            <a href="login.html">Log Out</a>
+        </nav>
+        
+    </header>
+
+    <main class="container">
+
+       <section class="search-container">
+            <section class="search-container">
+        <input type="text" id="searchInput" placeholder="Search deals...">
+        <button id="SearchDeal">Search</button>
+</section>
+        </section>
+
+        <h3 style="margin-top: 25px;">Deals</h3>
+
+        <div class="dashboard-grid-container" id="dealContainer"></div>
+
+        <div class="deal-card-item-card" id="add-deal-card">
+            <h3>Add New Deal</h3>
+
+            <form id="NewDealForm">
+                <input type="text" id="NewDealcategory" placeholder="Category (Required)">
+                <input type="text" id="NewDealdescription" placeholder="Description">
+                <input type="text" id="NewDealAddress" placeholder="Address">
+                <input type="text" id="NewDealStore" placeholder="Store (Required)">
+                <input type="text" id="NewDealStoreLink" placeholder="Store Link">
+
+                <label>Start date (Required)</label>
+                <input type="date" id="NewDealStartDate">
+
+                <label>End Date (Required)</label>
+                <input type="date" id="NewDealEndDate">
+
+                <input type="submit" id="CreateNewDealButton" value="Save Deal" class="btn primary">
+            </form>
+        </div>
+
+    </main>
+</body>
+</html>
+
+</html>

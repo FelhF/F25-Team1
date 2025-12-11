@@ -6,6 +6,8 @@ import java.io.IOException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.Salify.Deal.Deal;
+import com.example.Salify.Deal.DealRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Service
@@ -13,6 +15,9 @@ public class BoardService {
 
     @Autowired
     private BoardRepository boardRepo;
+
+    @Autowired
+private DealRepository dealRepo;
 
     // Get all boards
     public Object getAllBoards() {
@@ -71,4 +76,26 @@ public class BoardService {
             return null;
         }
     }
+
+    public Board addDealToBoard(Long boardId, Long dealId) {
+    Board board = boardRepo.findById(boardId)
+        .orElseThrow(() -> new RuntimeException("Board not found"));
+    Deal deal = dealRepo.findById(dealId)
+        .orElseThrow(() -> new RuntimeException("Deal not found"));
+
+    board.getDeals().add(deal);
+
+    return boardRepo.save(board);
+}
+
+    public Board removeDealFromBoard(Long boardId, Long dealId) {
+    Board board = boardRepo.findById(boardId)
+        .orElseThrow(() -> new RuntimeException("Board not found"));
+    Deal deal = dealRepo.findById(dealId)
+        .orElseThrow(() -> new RuntimeException("Deal not found"));
+
+    board.getDeals().remove(deal);
+
+    return boardRepo.save(board);
+}
 }

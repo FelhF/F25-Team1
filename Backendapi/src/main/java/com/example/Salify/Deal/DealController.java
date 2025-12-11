@@ -3,12 +3,16 @@ package com.example.Salify.Deal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+
 @RestController
+@CrossOrigin(origins = "*")
 public class DealController {
 
     @Autowired
     private DealService dealService;
 
+
+    
     // Get all deals
     @GetMapping("/deals")
     public Object getAllDeals() {
