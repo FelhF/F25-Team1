@@ -30,10 +30,6 @@ This website was created for users interested in a specific topic or item to be 
     View user statistics: View percentage of users redirected to deal's website.
     Reply to reviews: Reply to feedback or reviews.
 
-3.System admin
-    Manage user access: Warn and ban users and creators.
-    moderate services: delete unreliable or untrustworthy deal listings.
-    moderate review: delete reviews.
-    view usage statistics: Review views and redirections of deal listings.
+## Run program
 
-
+To run the program, run the "SalifyApplication.java"
