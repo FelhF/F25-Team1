@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Salify – Register</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="register">
+  <header class="top-bar">
+    <div class="logo">Salify</div>
+    <nav class="nav-links">
+      <a href="index.html">Deals</a>
+    </nav>
+  </header>
+
+  <main class="container form-container">
+    <h1>Create an account</h1>
+    <form id="registerForm" class="card form-card">
+      <label>Name
+        <input type="text" name="name" required />
+      </label>
+      <label>Email
+        <input type="email" name="email" required />
+      </label>
+      <label>Password
+        <input type="password" name="password" required />
+      </label>
+      <button type="submit" class="btn primary">Register</button>
+      <p class="small-text">
+        Already have an account? <a href="login.html">Login</a>
+      </p>
+      <p id="registerError" class="error-text"></p>
+    </form>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Salify – Account</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="settings">
+  <header class="top-bar">
+    <div class="logo">Salify</div>
+    <nav class="nav-links">
+  <a href="index.html">Deals</a>
+  <a href="favorites.html">Favorites</a>
+  <a href="community.html">Community Boards</a>
+  <a href="my-boards.html">My Boards</a>
+  <a href="settings.html">Account</a>
+  <a href="admin.html" id="adminLink" class="hidden">Admin</a>
+</nav>
+
+    <div class="auth-links">
+      <span id="currentUser"></span>
+      <a href="login.html" id="loginLink">Login</a>
+      <button id="logoutBtn" class="btn secondary hidden">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Account</h1>
+    <section class="card form-card">
+  <div class="avatar-container">
+    <img id="avatarPreview" class="avatar-img" alt="Profile picture" style="display:none;">
+  </div>
+  <form id="settingsForm">
+    <label>Name
+      <input type="text" name="name" required />
+    </label>
+    <label>Email
+      <input type="email" name="email" required />
+    </label>
+    <label>Phone Number
+      <input type="text" name="phone" />
+    </label>
+    <label>City
+      <input type="text" name="city" />
+    </label>
+    <label>State
+      <input type="text" name="state" />
+    </label>
+    <label>Address
+      <input type="text" name="address" />
+    </label>
+    <label>Spirit animal (we’ll use this for your profile picture)
+      <input type="text" name="spirit_animal" placeholder="e.g. fox, lion, owl" />
+    </label>
+    <button type="submit" class="btn primary">Save changes</button>
+    <p id="settingsMsg" class="info-text"></p>
+  </form>
+</section>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
