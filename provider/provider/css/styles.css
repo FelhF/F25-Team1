@@ -1,3 +1,168 @@
+/* Old version of style.css */
+
+:root {
+  --primary-color: #3498db; 
+  --secondary-color: #e74c3c; 
+  --accent-color: #f1c40f;
+  --background-color: #ecf0f1;
+  --text-color: #2c3e50; 
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: var(--primary-color);
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.auth-form, .info-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: #bdc3c7;
+  color: var(--text-color);
+  width: auto;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background-color: #95a5a6;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.deal-card-item, .board-card-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+
+#add-deal-card, #add-board-card {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  border: 2px dashed #ccc; 
+  cursor: pointer;
+}
+
+
+
+#Register{
+  background-color: green;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+#RegisterUsername{
+  margin-top: 10px;
+}
+
+#Register:hover {
+  background-color: var(--primary-color);
+}
+
+#NewDealEndDate{
+  margin-bottom: 10px;
+}
+
+
+
+.AddtoBoardbtn{
+  margin-top: 10px; background-color: #3498db; color: white;
+}
+
+.RemoveDealBtn{
+  width: auto; margin-top: 10px; background-color: #e74c3c; color: white;
+}
+
+/*
+new styles for owned-board-list.html
+*/
 *,
 *::before,
 *::after {
@@ -144,7 +309,7 @@ textarea {
   box-shadow: 0 10px 20px rgba(15, 23, 42, 0.14);
 }
 
-.deal-card-image {
+.deal-card-image, .deal-board-image {
   width: 100%;
   height: 150px;
   border-radius: 0.7rem;
@@ -238,34 +403,6 @@ textarea {
   padding: 1.5rem;
 }
 
-.deal-meta {
-  font-size: 0.8rem;
-  color: #4b5563;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.deal-store {
-  font-weight: 600;
-}
-
-.deal-source {
-  font-size: 0.78rem;
-}
-
-.deal-dates span {
-  display: inline-block;
-  margin-right: 0.5rem;
-}
-
-.deal-id {
-  font-size: 0.75rem;
-  color: #9ca3af;
-}
-
-
 .deal-detail img {
   width: 100%;
   border-radius: 0.9rem;
@@ -317,22 +454,6 @@ textarea {
   font-size: 0.9rem;
 }
 
-.admin-table table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.85rem;
-}
-
-.admin-table th,
-.admin-table td {
-  padding: 0.45rem 0.5rem;
-  border-bottom: 1px solid #e5e7eb;
-  text-align: left;
-}
-
-.admin-table th {
-  background: #f9fafb;
-}
 
 @media (max-width: 768px) {
   .deal-detail {
@@ -348,35 +469,13 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
- /* ===== Account Avatar Styling ===== */
-
-.avatar-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+  }
 }
 
-/*
-.avatar-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 1rem;
+#add-deal-card{
+  background-color: white;
 }
 
-/* 
-.avatar-img {
-  width: 45px !important;
-  height: 45px !important;
-  border-radius: 50% !important;
-  object-fit: cover !important;
-  border: 2px solid #d1d5db;
-  display: block;
-}
-
-
-
-}
+.deallink {
+  color: blue;
 }
